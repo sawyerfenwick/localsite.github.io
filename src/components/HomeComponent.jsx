@@ -1,12 +1,10 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Button from 'react-bootstrap/Button';
+
+import HeaderComponent from './HeaderComponent';
 
 function HomeComponent() {
     return (
       <div>
-          <Button as="a" variant="primary">
-            Button as link
-            </Button>
+         <HeaderComponent></HeaderComponent>
       </div>
     );
   }
