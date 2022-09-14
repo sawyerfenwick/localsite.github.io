@@ -14,7 +14,12 @@ function FormComponent() {
       </div>
       {/* This utilizes flexbox to change the area of the screen it would occupy. Justify content */}
       <div class="d-flex justify-content-center">
-      <button type="submit" class="btn btn-primary">Enter</button>
+        <div >
+        <button type="submit" class="btn btn-primary mx-4">Enter</button>
+        <button type="submit" class="btn btn-primary mx-4">Enter</button>
+        <button type="submit" class="btn btn-primary mx-4">Enter</button>
+        <button type="submit" class="btn btn-primary mx-4">Enter</button>
+        </div>
       </div>
       </form>
     );
