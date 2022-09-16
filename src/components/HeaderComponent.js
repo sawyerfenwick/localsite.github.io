@@ -2,17 +2,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '../App.css';
 
 import header_background from '../resources/header-bg.jpeg'
-import {
-    MDBNavbar,
-    MDBNavbarNav,
-    MDBNavbarItem,
-    MDBNavbarLink,
-    MDBNavbarToggler,
-    MDBContainer,
-    MDBIcon,
-    MDBBtn,
-    MDBCollapse
-  } from 'mdb-react-ui-kit';
   
   function HeaderComponent() {
     return (
