@@ -2,6 +2,8 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {useState} from 'react';
 import ReactDOM from 'react-dom/client';
+import { BrowserRouter as Router, Link, Routes, Route} from "react-router-dom";
+
 
 class FormComponent extends React.Component {
   constructor(props) {
@@ -30,14 +32,19 @@ class FormComponent extends React.Component {
           <label for="inputProvince">Province Name</label>
           <input type="province" class="form-control" id="inputProvince" placeholder="Enter Province"></input>
         </div>
-        {/* This utilizes flexbox to change the area of the screen it would occupy. Justify content */}
         <div class="d-flex justify-content-center">
+        <Link to="/weather">
         <button type="submit" class="btn btn-primary mx-3">Weather</button>
+        </Link>
+        <Link to="/news">
         <button type="submit" class="btn btn-primary mx-3">News</button>
+        </Link>
         <button type="submit" class="btn btn-primary mx-3">Maps</button>
         <button type="submit" class="btn btn-primary mx-3">COVID-19</button>
-        </div>
+        </div> 
         </form>
+       
+       
       );
     } 
       
