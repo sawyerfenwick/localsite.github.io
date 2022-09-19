@@ -3,7 +3,7 @@ import '../App.css';
 
 import header_background from '../resources/header-bg.jpeg'
   
-  function HeaderComponent() {
+function HeaderComponent() {
     return (
       <div>
         <div className='p-5 text-center header-oswald' style={{ backgroundImage: `url(${header_background})` }}>

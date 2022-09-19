@@ -3,15 +3,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Card from 'react-bootstrap/Card';
 
 
-class NewsComponent extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      newsQuery: null,
-    };
-  }
-    render(){
-      return (
+function NewsComponent(props){
+ 
+    return (
           <div className='d-flex justify-content-evenly my-4'>
             <Card style={{ width: '18rem' }}>
                 <Card.Body>
@@ -25,9 +19,8 @@ class NewsComponent extends React.Component {
                 </Card.Body>
             </Card>
           </div>
-       
-      );
-    }   
+    );
+    
 }
 
 export default NewsComponent;
