@@ -12,7 +12,7 @@ function FormComponent(props) {
       const handleSubmit = (event) => {
         event.preventDefault();
         if(state.button === 1){
-          alert(`The weather you entered was: ${city}, ${province}`);
+          getLocation();
           navigate("/weather", {state:{cityName: city, provinceName: province}});
         }
         else if(state.button === 2){
@@ -48,5 +48,19 @@ function FormComponent(props) {
           </form>
         </div>
       );
-    } 
-    export default FormComponent;
+} 
+
+function etLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else { 
+    alert("Geolocation is not supported by this browser.");
+  }
+}
+
+function showPosition(position) {
+  alert("long = " + position.coords.latitude + "lat = " + 
+   position.coords.longitude);
+}
+
+export default FormComponent;
