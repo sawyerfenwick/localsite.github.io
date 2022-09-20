@@ -13,11 +13,11 @@ function FormComponent(props) {
         event.preventDefault();
         if(state.button === 1){
           alert(`The weather you entered was: ${city}, ${province}`);
-          navigate("/weather");
+          navigate("/weather", {state:{cityName: city, provinceName: province}});
         }
         else if(state.button === 2){
           alert(`The news you entered was: ${city}, ${province}`);
-          navigate("/news");
+          navigate("/news", {state:{cityName: city, provinceName: province}});
         }
         else if(state.button === 3){
           alert(`The maps you entered was: ${city}, ${province}`);
