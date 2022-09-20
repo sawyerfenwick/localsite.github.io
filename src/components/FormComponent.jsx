@@ -50,7 +50,7 @@ function FormComponent(props) {
       );
 } 
 
-function etLocation() {
+function getLocation() {
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(showPosition);
   } else { 
