@@ -46,8 +46,6 @@ function FormComponent(props) {
           <button onClick={() => (state.button = 4)} type="submit" class="btn btn-primary mx-3">COVID-19</button>
           </div> 
           </form>
-
-
         </div>
       );
     } 
