@@ -1,22 +1,23 @@
 import {useState,} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import WeatherComponent from './WeatherComponent';
-// import {Link} from "react-router-dom";
+import {useNavigate} from "react-router-dom";
 
 
 function FormComponent(props) {
       const[city, setCity] = useState("");
       const[province, setProvince] = useState("");
       const state = {button: 1};
+      const navigate = useNavigate();
       // Type annotations can only be used in Typescript, for performances purpose, a future project in TS could work
       const handleSubmit = (event) => {
         event.preventDefault();
         if(state.button === 1){
-          // alert(`The weather you entered was: ${city}, ${province}`);
-          // <WeatherComponent></WeatherComponent>
+          alert(`The weather you entered was: ${city}, ${province}`);
+          navigate("/weather");
         }
         else if(state.button === 2){
           alert(`The news you entered was: ${city}, ${province}`);
+          navigate("/news");
         }
         else if(state.button === 3){
           alert(`The maps you entered was: ${city}, ${province}`);
